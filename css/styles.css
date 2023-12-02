@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 1.5em;
+}
+
+header h1 {
+    float: right;
+    color: rgb(38, 186, 95);
+}
+
+body {
+    font-family: 'Quantico', sans-serif;
+    font-size: 87.5%;
+    background-color: rgb(196, 255, 198);
+}
+
+main {
+    background-color: rgb(69, 218, 89);
+    color: rgb(42, 149, 58);
+    padding: 2em 0;
+}
+
+main.hero {
+    height: 50vh;
+    padding: 0;
+}
+
+section,
+figure {
+    margin: 2em;
+    font-size: 1vmax;
+}
+
+footer {
+    flex-basis: 100%;
+    margin: 2em;
+    font-family: 'Quantico', sans-serif;
+    font-size: .7em;
+    color: rgb(54, 149, 42);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #54e87e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(84, 172, 98);
+}
+
+a[href^="tel:"]:before {
+    content: "\260e";
+    margin-right: 10px;
+}
+
+.button {
+    border: none;
+    color: rgb(184, 245, 179);
+    background-color: rgb(25, 133, 52);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.button:hover,
+.button:focus {
+    background-color: rgb(69, 226, 124);
+}
+
+figure img {
+    width: 30vw;
+    max-width: 45vh;
+    border-radius: 8px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav>img {
+    margin: 1em;
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 10em;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(25, 133, 52);
+    color: rgb(126, 221, 149);
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: rgb(77, 237, 141);
+}
+
+#nav_menu ul li a.current {
+    background-color: rgb(26, 148, 48);
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.hero h2 {
+    font-family: "Abril Fatface", serif;
+}
+
+.box {
+    padding: 5em;
+    margin: 5vh auto 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item {
+    background-color: rgb(25, 133, 52);
+    margin: 1em;
+    padding: 1em;
+    color: rgb(161, 248, 180);
+    max-width: 20em;
+    border-radius: 10px;
+}
+
+img~ul {
+    align-self: flex-end;
+
+}
+
+.utility_pic {
+    margin: 5em;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: rgb(25, 133, 52);
+    font-family: "Abril Fatface", serif;
+}
+
+#features h3 {
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+}
+
+h2 {
+    font-size: 2vmax;
+    color: rgb(16, 122, 21);
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+}
+
+h3 {
+    color: rgb(4, 62, 19);
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+form div .formButton {
+    color: rgb(2, 66, 4);
+    background-color: rgb(99, 211, 131);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.formButton:hover,
+.formButton:focus {
+    background-color: rgb(51, 222, 36);
+}
+
+#application form {
+    width: 90vw;
+    justify-content: center;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto;
+    grid-template-columns: 10em 20em 10em 20em;
+}
+
+#application form label,
+#application form span {
+    justify-self: end;
+}
+
+#application h2 {
+    font-size: 2em;
+    text-align: left;
+    margin-left: 15em;
+    margin-bottom: 2em;
+}
+
+.gridFullWidth {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.gridWidth {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+form textarea {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: darkseagreen;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: darkseagreen;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: rgb(196, 255, 198);
+    padding: 14px 20px;
+    margin-left: 25%;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 8px
+}
+
+.btn {
+    background-color: #01422e;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.btn:hover{
+    background-color: rgb(196, 255, 198);
+}
+
+.plant {
+    color: rgb(196, 255, 198);
+    font-size: 1.5em;
+}
+
+#create {
+    width: 25%;
+    padding-top: 15%;
+}
+
+#create a {
+    margin-left: 10%;
+    margin-top: 50%;
+    font-size: 1.5em;
+}
+
+button {
+    background-color: #04AA6D;
+    color: rgb(196, 255, 198);
+    padding: 14px 20px;
+    margin-left: 25%;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 8px
+}
+
+button:hover {
+    background-color: rgb(69, 226, 124);
+}
+
+
+.container {
+    padding: 16px;
+}
+
+.signup form {
+    background-color: rgb(196, 255, 198);
+    margin: 2em auto 2em auto;
+    border: 1px solid rgb(25, 133, 52);
+    width: 35%;
+    border-radius: 8px;
+
+}
+
+hr {
+    border: 1px solid rgb(25, 133, 52);
+    margin-bottom: 25px;
+}
